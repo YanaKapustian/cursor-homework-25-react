@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Navbar />
           <Routes>
-            <Route exact path='/' element={<Homepage />}></Route>
+            <Route exact path='/homepage' element={<Homepage />}></Route>
             <Route exact path='/twitter' element={<Twitter />}></Route>
             <Route exact path='/instagram' element={<Instagram />}></Route>
             <Route exact path='/contacts' element={<Contacts />}></Route>
