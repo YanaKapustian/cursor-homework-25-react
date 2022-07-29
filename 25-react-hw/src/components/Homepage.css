@@ -1,0 +1,13 @@
+h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
+img {
+    width: 500px;
+    border-radius: 5px;
+}
