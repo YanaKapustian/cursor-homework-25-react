@@ -8,7 +8,7 @@ const Contact = ({props}) => {
     const {firstName, lastName, username, phone, gender} = props;
     return (
         <div className='contact-item'>
-            <div className='info'><NavLink className="link-contacts" to={`/cursor-homework-25-react/contacts/${username}`}>{firstName} {lastName} {gender === 'female' ? <img src={femalePic} alt="female" className='female' /> : gender === 'male' ? <img src={malePic} alt="male" className='male' /> : null }</NavLink></div>
+            <div className='info'><NavLink className="link-contacts" to={`/contacts/${username}`}>{firstName} {lastName} {gender === 'female' ? <img src={femalePic} alt="female" className='female' /> : gender === 'male' ? <img src={malePic} alt="male" className='male' /> : null }</NavLink></div>
             <div className='phone'>{phone}</div>
         </div>
     )
