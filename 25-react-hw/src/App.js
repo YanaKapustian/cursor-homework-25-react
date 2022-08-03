@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Navbar />
           <Routes>
-            <Route exact path="">
+            <Route exact path="/cursor-homework-25-react">
                <Navigate to="/homepage"/>
             </Route>
             <Route exact path='/homepage' element={<Homepage />}></Route>
