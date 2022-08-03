@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import Homepage from './components/Homepage';
 import Navbar from './components/Navbar';
 import Twitter from './components/Twitter';
@@ -13,7 +13,10 @@ function App() {
     <Router>
       <Navbar />
           <Routes>
-            <Route exact path='/' element={<Homepage />}></Route>
+            <Route exact path="">
+               <Navigate to="/homepage"/>
+            </Route>
+            <Route exact path='/homepage' element={<Homepage />}></Route>
             <Route exact path='/twitter' element={<Twitter />}></Route>
             <Route exact path='/instagram' element={<Instagram />}></Route>
             <Route exact path='/contacts' element={<Contacts />}></Route>
