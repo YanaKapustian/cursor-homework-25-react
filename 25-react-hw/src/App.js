@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Navbar />
           <Routes>
-            <Route exact path='/cursor-homework-25-react/homepage' element={<Homepage />}></Route>
+            <Route exact path='/cursor-homework-25-react/' element={<Homepage />}></Route>
             <Route exact path='/cursor-homework-25-react/twitter' element={<Twitter />}></Route>
             <Route exact path='/cursor-homework-25-react/instagram' element={<Instagram />}></Route>
             <Route exact path='/cursor-homework-25-react/contacts' element={<Contacts />}></Route>
